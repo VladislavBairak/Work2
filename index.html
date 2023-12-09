@@ -1,24 +1,30 @@
 <!DOCTYPE html>
 <html>
+<meta charset="utf-8">
+<meta name="viewport"
+content="width=device-width, initial-scale=1" />
 	<head>
-		<script
-src="https://cdn.jsdelivr.net/gh/aframevr/aframe@9b8609bd84a292ef97bf1e8589401ae0d3201280/dist/aframe-master.min.js">
-</script>
+		<script 
+			src="https://cdn.jsdelivr.net/gh/aframevr/aframe@9b8609bd84a292ef97bf1e8589401ae0d3201280/dist/aframe-master.min.js">
+		</script>
 	</head>
 	<body>
 		<a-scene>
 			<a-sky color="grey"></a-sky>
 			<a-plane width="7" height="7" rotation="50 0 0"position="-2 -2 -5" color="purple"></a-plane>
-			<a-torus position="-2 1 -5" color="green" radius="1.2"></a-torus>
+			<a-torus position="-2 1 -5" color="green" radius="1.2" animation="property:rotation; to: 0 360 0; loop:true; dur:10000"></a-torus>
 			<a-cylinder color="yellow" height="2" radius="0.05"
 position="-2 -1 -5"></a-cylinder>
 <a-cylinder color="blue" height="2" radius="0.05"
-position="-3 -1 -5"></a-cylinder>
-<a-torus-knot color="orange" radius="1.2" position="-3 1 -5">
-</a-torus-knot>
+position="-5 -1 -5"></a-cylinder>
+<a-torus src="https://raw.githubusercontent.com/aframevr/sampleassets/master/assets/images/illustration/758px-Canestra_di_
+frutta_(Caravaggio).jpg" color="orange" radius="1.2" position="-5 1 -5">
+</a-torus>
 <a-plane width="9" height="2" position="3 1 -9"></a-plane>
-<a-text value="Welcome to browser’s VR!" color="black"
-width="10" position="-0.5 1 -6"></a-text>
+<a-text value="Вiтання від Владислава!" color="black" width="10"
+position="-0.5 1 -6" font="Vladyslav-msdf.json" negate="false">
+</a-text>
 		</a-scene>
+		<script src="/main.js"></script>
 	</body>
 </html>
